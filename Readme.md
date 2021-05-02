@@ -14,9 +14,13 @@ Online stores
 6. Arduino battery pack 6V (eBay~=2$ Ali~=2$)
 7. Arduino cables ~= 20 (eBay~=7$ Ali~=2.5$)
 8. Arduino 2 Position switch (Amazon~=5$ Ali~=0.5$)
+
 Total: ~= 36.7$
+
 Ali : ~= 14.95$
+
 Amazon/eBay : ~= 54.9$
+
 P.S. This package real price ~=40$
 
 Schematics&Notes
