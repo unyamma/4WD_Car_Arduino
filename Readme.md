@@ -12,7 +12,7 @@ Online stores
 5.IR remote (eBay~=3$ Ali~=1$) +Sometime you can get in pair with IR receiver
 5.1.IR receiver (eBay~=$3 Ali~=0.4$)
 6. Arduino battery pack 6V (eBay~=2$ Ali~=2$)
-7. Arduino cables ~= 20 (eBay~=7$ Ali~=2.5$)
+7. Arduino cables ~= 20 (eBay ~= 7$ Ali ~= 2.5$)
 8. Arduino 2 Position switch (Amazon~=5$ Ali~=0.5$)
 
 Total: ~= 36.7$
