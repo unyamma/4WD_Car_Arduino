@@ -60,31 +60,31 @@ void loop() { // Running allways but after start function
       
   }
   if (irr == 0x18) { // !Important 0x18 code I saw on MY IR device any other device can show other code for "up arrow"!
-    digitalWrite(In1, LOW); //----------
-    digitalWrite(In2, HIGH);//Activating 2 input (Maybe turn right)
-    digitalWrite(In3, LOW); //
-    digitalWrite(In4, HIGH);//----------
+    digitalWrite(In1, LOW); //A+ 0
+    digitalWrite(In2, HIGH);//A- 1
+    digitalWrite(In3, HIGH);//B+ 1
+    digitalWrite(In4, LOW); //B- 0 ---- Wheels A backwards, Wheels B forward ---- Turn left
     irr = 0x00; // Set code for stop button  !If You change stop code below you must change here!
     }
   if (irr = 0x4E) { // !Important 0x4E code didn't checked, and in real life you device have other code for "" button!
-    digitalWrite(In1, LOW);// ---------
-    digitalWrite(In2, LOW);//Stopping motors
-    digitalWrite(In3, LOW);//cuz "OK" signal received
-    digitalWrite(In4, LOW);// ---------
+    digitalWrite(In1, HIGH);//A+ 1
+    digitalWrite(In2, LOW); //B- 0
+    digitalWrite(In3, LOW); //B+ 0
+    digitalWrite(In4, HIGH);//B- 1 ---- Wheels A FWD, B BCK ---- Turn left
     irr = 0x00; // Set code for stop button  !If You change stop code below you must change here!
   }
   if (irr = 0x27) { // !Important 0x27 code didn't checked, and in real life you device have other code for "" button!
-    digitalWrite(In1, LOW);// ---------
-    digitalWrite(In2, LOW);//Stopping motors
-    digitalWrite(In3, LOW);//cuz "OK" signal received
-    digitalWrite(In4, LOW);// ---------
+    digitalWrite(In1, HIGH);//A+ 1
+    digitalWrite(In2, LOW); //A- 0
+    digitalWrite(In3, HIGH);//B+ 1
+    digitalWrite(In4, LOW); //B- 0 ---- A FWD, B FWD ---- Go forward
     irr = 0x00; // Set code for stop button  !If You change stop code below you must change here!
   }
   if (irr = 0x00) { // !Important 0x00 code I saw on MY IR device any other device can show other code for "OK" button!
-    digitalWrite(In1, LOW);// ---------
-    digitalWrite(In2, LOW);//Stopping motors
-    digitalWrite(In3, LOW);//bcuz* "OK" signal received
-    digitalWrite(In4, LOW);// ---------
+    digitalWrite(In1, LOW); //A+ 0
+    digitalWrite(In2, HIGH);//A- 1
+    digitalWrite(In3, LOW); //B+ 0
+    digitalWrite(In4, HIGH);//B- 1 ---- A&B BCK ---- GO backwards
   }
   /*
   digitalWrite(In1, LOW);// ---------
