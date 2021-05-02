@@ -42,5 +42,8 @@ Wheels only weared on motors
 
 P.S. My build worked, so good luck ;)
 
+Gmail:ppcrosout@gmail.com
+Patreon (Give 1$) : https://www.patreon.com/spafujigames?fan_landing=true 
+
 Terms$Rules
 I didn't incharged if you break or something didn't work but if you tell you MAYBE get help.
