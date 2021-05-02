@@ -4,11 +4,7 @@
 * Schematic: Mixed
 * Program part: Spafuji
 * Device: Arduino //! \/ Important parts \/!
-* ----Yun Shield for Arduino Uno R3
-* ----Arduino Uno R3
-* ----L298N Stepper Motor Driver
-* ----IR receiver (please don't fire yours, check how Your receiver connecting to schematics) 
-* ----IR remote (You also need check output commands for Your remote and change it below)
+* ----All in Readme.md
 * If smthing didn't work before contact me please try to change version of IRemote library
 */
 
@@ -16,11 +12,11 @@
 
 #include <IRremote.h> // !library for IR remote control!
 
-int IR_RECEIVE_PIN = 11; // Output pin (Arduino Uno r3 Yun Shield) for IR receiver
-#define In1 2// Wire from Yun Shield (2nd signal) to "In1" L298N Stepper Motor Driver
-#define In2 3// Wire from Yun Shield (3nd signal) to "In2" L298N Stepper Motor Driver
-#define In3 4// Wire from Yun Shield (4nd signal) to "In3" L298N Stepper Motor Driver
-#define In4 5// Wire from Yun Shield (5nd signal) to "In4" L298N Stepper Motor Driver
+int IR_RECEIVE_PIN = 11; // Output pin (Arduino Uno r3 Sensor Shield) for IR receiver
+#define In1 2// Wire from Sensor Shield (2nd signal) to "In1" L298N Stepper Motor Driver
+#define In2 3// Wire from Sensor Shield (3nd signal) to "In2" L298N Stepper Motor Driver
+#define In3 4// Wire from Sensor Shield (4nd signal) to "In3" L298N Stepper Motor Driver
+#define In4 5// Wire from Sensor Shield (5nd signal) to "In4" L298N Stepper Motor Driver
 
 unsigned long irr = 0x00;//variable for saving the IR device output //!If you change variable for stopping below you must change here!
 
