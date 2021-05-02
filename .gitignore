@@ -1,0 +1,5 @@
+#ZIP's
+*.zip
+#Folders
+local/
+IRremote-3.1.0/
